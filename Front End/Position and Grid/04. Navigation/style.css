@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(238, 238, 238);
+    padding: 10px 70px;
+    grid-template-areas: 
+    "header header"
+    "main aside";
+    grid-template-columns: 70% 30%;
+    display: grid;
+
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+h1,h2,h3{
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+header p{
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: 600;
+    display: inline-block;
+}
+header nav{
+    display: inline-block;
+}
+header nav li{
+    display: inline-block;
+}
+header nav li a{
+    color: rgb(0,102, 0);
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 300px;
+}
+aside{
+    padding-left: 40px;
+    border-top: 2px solid black;
+}
+aside a{
+    color: rgb(0,102, 0);
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+    
+}
+main{
+    border-top: 2px solid black;
+}
+img{
+    padding: 5px;
+    background-color: rgb(255, 255, 255) ;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.left, .right{
+    vertical-align: middle;
+    display: inline-block;
+    width: 49%;
+    
+}
+.left{
+    border-right: 2px solid gray;
+}
+blockquote{
+    font-family:Georgia, serif;
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+}
+.right span{
+    float: right;
+}
+.img-1{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+.img-2{
+    float: left;
+    margin-right: 10px;
+}

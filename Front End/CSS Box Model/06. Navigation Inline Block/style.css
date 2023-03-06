@@ -1,0 +1,33 @@
+body{
+    font-family: Helvetica, sans-serif;
+    padding: 20px 40px;
+
+}
+header{
+    font-family: Helvetica, sans-serif;
+}
+header h1{
+    display: inline-block;
+}
+header nav{
+    display: inline-block;
+}
+header ul li {
+    display: inline-block;
+    padding-right:20px;
+}
+header ul li a{
+    color: green;
+    text-decoration: none;
+}
+main{
+    border-top: 1px solid black;
+}
+main h1{
+    font-weight: 400;
+}
+main p{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    line-height: 1.5;
+}

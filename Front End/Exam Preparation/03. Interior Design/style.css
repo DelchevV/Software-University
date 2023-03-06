@@ -1,0 +1,141 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+/*
+COLORS
+
+gradient start end #a19890 #c9c7c6*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+.hero{
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+    height: 1200px;
+    overflow: hidden;
+}
+.hero img{
+    width: 100%;
+}
+.title-wrap{ 
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 20px;
+    box-shadow: 2px 2px 20px black;
+}
+.title-wrap h1, h2, h3{
+    font-family: "Abril Fatface";
+    font-size: 60px;
+}
+.hero .hr{
+    width: 70%;
+    height:2px;
+    margin: 20px 0px;
+    background-color: white;
+}
+.subtitle{
+    width: 400px;
+    position: absolute;
+    right: 2rem;
+    bottom: 10rem;
+    background: linear-gradient(to right , #a19890, #c9c7c6) ;
+    color: white;
+    text-align: right;
+    padding:40px;
+    box-shadow: 2px 2px 20px black;
+}
+.content{
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1.9fr 1.1fr;
+}
+.content .title{
+    text-transform: uppercase;
+}
+.left-section{
+    padding: 3rem 4rem;
+    background-color: #f2f0f3;
+}
+.left-section .bolded{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.left-section .title{
+    font-size: 30px;
+}
+.left-section .title:nth-of-type(2){
+    font-size: 30px;
+    margin-top: 6rem;
+}
+.left-section .items .item{
+    margin-top: 2rem;
+}
+.left-section .hr{
+    width: 120%;
+    margin-left: -4rem;
+    height: 1px;
+    background-color: black;
+}
+.left-section .contacts .items{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.left-section .contacts .items .item{
+    margin-top: 0px;
+
+}
+.left-section .contacts .items .item span{
+    font-weight: bold;
+}
+.left-section .get-started{
+    margin-top: 2rem;
+}
+.left-section .get-started input{
+    width: 50%;
+    background-color: #bab1ad ;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 6px;
+
+}
+.left-section .get-started input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.left-section .get-started .btn{
+    background-color: #67784d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 6px;
+    margin-left: 10px;
+
+} 
+.right-section{
+    padding: 20px 20px;
+    background-color: #bab1ad;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.right-section h3{
+    font-family: Roboto;
+    color: white;
+    font-weight: 100;
+    font-size: 80px;
+}
+.right-section .desc{
+    margin-top: -30px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+

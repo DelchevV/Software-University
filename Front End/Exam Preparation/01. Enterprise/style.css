@@ -1,0 +1,66 @@
+/*
+bg #f6f8f9
+button color #786eff
+title txt #38424f
+main txt #b9bec3
+*/
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif;
+}
+.wrapper{
+    max-width: 1000px;
+    background-color:#f6f8f9;
+    border-radius: 8px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.image{
+    width: 35%;
+    height: 100%;
+    
+    margin-right: 5%;
+}
+.text-cont{
+
+    padding: 70px 40px;
+    width: 50%;
+}
+.text{
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #7a838c;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 18px;
+    font-weight: normal;
+}
+.subtitle{
+    color: #2a3543;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.title{
+    letter-spacing: 1px;
+    color: #2a3543;
+    font-weight: normal;
+    font-size: 36px;
+}
+.btn{
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #f6f8f9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact{
+    background-color:#786eff;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid #786eff ;
+}

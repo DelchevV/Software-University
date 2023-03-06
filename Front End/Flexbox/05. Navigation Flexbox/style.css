@@ -1,0 +1,28 @@
+body{
+    padding:0px 80px;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+}
+header{
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header .title{
+
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a{
+    color:rgb(0, 153, 0);
+}

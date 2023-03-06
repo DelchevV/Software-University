@@ -1,0 +1,105 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+body{
+    /* background-color: lightgrey; */
+    background-image: linear-gradient(to right,#845EC2,#D65DB1,#FF6F91,#FF9671, #FFC75F,#F9F871);
+}
+header{
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px gray;
+}
+.icon{
+    padding: 20px 0px;
+    display: inline-block;
+    width: 80%;
+}
+.icon span{
+    font-size: 30px;
+}
+.icon i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav{
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+main {
+    margin-top: 7%;
+}
+.img-cont{
+    text-align: right;
+    width: 50%;
+    display: inline-block;
+}
+img{
+    width: 300px;
+    border-radius: 300px;
+}
+.text-cont{
+    padding-left: 20px;
+    position: relative;
+    top: -5px;
+    width: 38%;
+    display: inline-block;
+}
+.text-cont article h1{
+    font-size: 70px;
+    line-height: 0.1;
+}
+.text-cont p{
+    width: 300px;
+}
+.text-cont span{
+   
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+footer{
+    margin-top: 12%;
+    border-top: 1px solid black;
+}
+footer div{
+    text-align: center;
+    width: 24%;
+    display: inline-block;
+}
+footer i{
+    margin-right: 15px;
+    color: black;
+}
+.text-cont span a{
+    display: inline-block;
+    padding: 54px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 92px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+
+}
+.text-cont span a:hover{
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    outline: 1px solid black;
+
+}

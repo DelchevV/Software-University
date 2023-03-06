@@ -1,0 +1,32 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css");
+.card form{
+    border: 1px solid gray;
+    width: 50%;
+    margin: 200px auto;
+    padding: 20px;
+    position: relative;
+}
+.login-text{
+    border: 1px solid gray;
+    padding: 15px;
+    width: 20%;
+    position: absolute;
+    top: -20%;
+    left: -1px;
+    z-index: 1;
+    background-color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.cont{
+    display: grid;
+    
+}
+@media (max-width:500px) {
+    
+}

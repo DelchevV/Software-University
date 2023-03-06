@@ -1,0 +1,61 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+body{
+    font-family: Courgette;
+    text-align: center;
+    background-color: lightgrey;
+}
+main{
+    max-width: 1000px;
+    margin: 200px auto;
+}
+.heading .title{
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 40px;
+}
+.heading .subtitle{
+    color: red;
+    font-size: 20px;
+    margin-left: 220px;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    
+}
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+}
+.card .title{
+    margin: 10px 0px 10px 0px;
+}
+.card .hr{
+    width: 80%;
+    height: 2px;
+    margin: 0px auto;
+    background-color: red;
+}
+.card .text{
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+}
+.card .text-cont{
+    display: flex;
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .continue{
+    padding-bottom: 10px;
+}

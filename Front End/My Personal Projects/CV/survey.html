@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Survey</title>
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+    <form action="GET">
+        <h1>This is a short survey about you!</h1>
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+            <label for="address" id="label-name">Address</label>
+            <input type="text" id="adddress" placeholder="Enter your address">
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-name">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-control">
+            <h3>Which best descipres you?</h3>
+            <select name="description" id="description">
+                <option value="student">Student</option>
+                <option value="worker">Worker</option>
+                <option value="influencer">Influencer/aka jobless idiot</option>
+                <option value="self_made">Self-made millioner</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <h3>Would you share about us with your friends?</h3>
+            
+            
+            <label for="no"><input type="radio" id="no"  name="radio-1" value="no">Absolutely No!</label>
+
+            
+            <label for="yes"><input type="radio" id="yes" name="radio-1" value="yes">Sincerly Yes!</label>
+
+            
+            <label for="half-no"><input type="radio"  id="half-no" name="radio-1" value="half-no">Why Would I like to do such a thing!</label>
+        </div>
+        <div class="form-control">
+            <h3>Which of the following skills you have mastered in past 2 years?</h3>
+            
+            <label for="skill-1"><input type="checkbox" id="skill-1" name="python" value="Python">Python</label>
+
+            
+            <label for="skill-2"><input type="checkbox" id="skill-2" name="html" value="html">HTML & CSS</label>
+
+            
+            <label for="skill-3"><input type="checkbox" id="skill-3" name="html" value="html">JavaScript</label>
+
+            
+            <label for="skill-4"><input type="checkbox" id="skill-4" name="html" value="html">C#</label>
+
+            
+            <label for="skill-5"><input type="checkbox" id="skill-5" name="html" value="html">C++</label>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

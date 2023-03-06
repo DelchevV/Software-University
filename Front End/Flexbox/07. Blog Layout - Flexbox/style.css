@@ -1,0 +1,71 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px 40px;
+    background-color: rgb(238, 238, 238);
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header{
+    flex-basis: 100%;
+}
+main{
+    flex-basis: 70%;
+}
+aside{
+    flex-basis: 20%;
+}
+.img1{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    float: right;
+}
+img{
+    border: 3px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.img2{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+header{
+    border-bottom: 3px solid black;
+}
+header p{
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+}
+aside a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family: Georgia, serif;
+}
+.left{
+    vertical-align: middle;
+    display: inline-block;
+    width: 48%;
+    padding-right: 5px;
+    border-right: 4px solid gray;
+}
+.right{
+    vertical-align: middle;
+    display: inline-block;
+    width: 49%;
+}
+blockquote{
+    font-family: Georgia, serif;
+    color: gray;
+}
+.right-align{
+    float: right;
+}

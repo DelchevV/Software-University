@@ -1,0 +1,15 @@
+article{
+    background-color: #f2f4c0;
+    border: 1px solid #b2ad7d; 
+    margin-bottom: 15px; 
+    padding: 10px;
+    width: 640px;
+}
+
+body{
+    background-color: #e4e978;
+}
+section article{
+    color:#4c7658 ;
+    font-style: italic;
+}

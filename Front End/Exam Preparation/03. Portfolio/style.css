@@ -1,0 +1,173 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+/*
+text-color #222222
+icon-bg-color #909090
+bg-color #efefef
+*/
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Raleway;
+}
+.container{
+    width: 1860px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.article{
+    background-color: #efefef;
+    padding: 80px 80px;
+    position: relative;
+    height: 800px;
+}
+.hero-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
+ .menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.hero-cont img{
+    align-items: end;
+}
+
+.text-cont .title{
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+.hr{
+    height: 80px;
+    width: 1px;
+    background-color:#222222 ;
+}
+
+.text-cont .text{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/*CAMERA*/
+
+
+.camera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.camera .text-cont{
+    margin-right: 100px;
+    width: 40%;
+}
+.camera .items{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+.camera .items .item{
+    width: 4rem;
+    height: 4rem;
+    background-color: #909090;
+    color: white;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.camera .items .item i{
+    font-size: 40px;
+}
+.camera .hr{
+    height: 1px;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    margin-right: 20px;
+}
+
+/*PORTRAIT*/
+
+.portrait img{
+    width: 100%;
+}
+.bridge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bridge img{
+    width: 50%;
+}
+.bridge .text-cont{
+    width: 40%;
+}
+
+.gallery{
+    padding: 80px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery img{
+    width: 30%;
+}
+.gallery img:nth-child(2){
+    scale: 1.2;
+}
+.form-cont{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.form-cont .text-cont{
+    width: 70%;
+    margin: 0px auto;
+}
+.form{
+    
+    width: 50%;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "email subj"
+    "msg msg"
+    "btn btn";
+    gap: 20px;
+}
+.send-btn{
+    grid-area: btn;
+    background-color: #222222;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.msg{
+    resize: none;
+    grid-area: msg;
+}
+.email{
+    grid-area: email;
+}
+.subj{
+    grid-area: subj;
+}
+.input{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #222222;
+}

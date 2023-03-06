@@ -1,0 +1,25 @@
+ul li{
+    list-style: none;
+}
+body{
+    background-color: lightgrey;
+}
+body, ul, li{
+    display: flex;
+    
+    padding: 20px;
+}
+
+.gallery ul{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.gallery ul li{
+    border: 5px solid black;
+    box-shadow: 5px 5px 20px black;
+    background-color: white;
+}
+img{
+    object-fit: contain;
+}

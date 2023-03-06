@@ -1,0 +1,25 @@
+*, h1{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(to right,#845EC2,#D65DB1,#FF6F91,#FF9671, #FFC75F,#F9F871);
+}
+div{
+    display: inline-block;
+    width: 36%;
+}
+img{
+    max-width: 100%;
+    max-height: 960px;
+    vertical-align: text-top;
+}
+.last{
+    width: 27%;
+    text-align: center;
+}
+h1{
+    vertical-align: text-top;
+    display: inline-block;
+    
+}

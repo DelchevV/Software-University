@@ -1,0 +1,38 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+body{
+    margin:0px;
+    padding: 0px;
+}
+.card{
+    display: block;
+}
+.first{
+    background: linear-gradient(to right, blue, lightgreen);
+}
+.second{
+    background: linear-gradient(to right, purple, orange);
+}
+
+.viewport{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+img{
+    width: 40%;
+}
+i{
+    position: absolute;
+    color: white;
+    z-index: 10;
+
+}
+.chain{
+    top: 84%;
+    left: 67%;
+}
+.star{
+    top: 91.5%;
+    left: 66.5%;
+
+}

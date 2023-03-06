@@ -1,0 +1,3 @@
+function pyramid(base, increment){
+    
+}

@@ -9,4 +9,4 @@ function solve(number){
       }
     console.log(sum)
 }
-solve(97561)
+solve(97561) 

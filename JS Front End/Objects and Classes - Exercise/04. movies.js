@@ -1,54 +1,35 @@
-function movieSolve(arr){
-    let movies=[];
+function solve(list) {
+    let output = {}
 
-    class movie{
-        constructor(name){
-            this.name=name
-            this.date=""
-            this.director=""
-            
-        }
-    }
-
-    for (line of arr){
-        if (line.startsWith("addMovie")){
-            line=line.replace("addMovie", "").trim()
-            let film= new movie(line)
-            movies.push(film);
-
-        }else if(line.includes("directedBy")){
-
-            line= line.replace("directedBy", "")
-            let [movieTitle, movieDirector]=line.split("  ")
-
-            for(mov of movies){
-                if (mov.name==movieTitle){
-                    mov.director=movieDirector
-                }
+    for (item of list) {
+        if (item.includes('addMovie')) {
+            let name = item.split('addMovie ')[1]
+            output[name] = {}
+            output[name].name = name
+        } else if (item.includes('directedBy')) {
+            let [nameMovie, nameDirector] = item.split(' directedBy ')
+            if (nameMovie in output) {
+                output[nameMovie].director = nameDirector
             }
-        } else if(line.includes("onDate")){
-            
-            line= line.replace("onDate", "")
-            let [movieTitle, movieDate]=line.split("  ")
-
-            for(mov of movies){
-                if (mov.name==movieTitle){
-                    mov.date=movieDate
-                }
+        } else if (item.includes('onDate')) {
+            let [nameMovie, date] = item.split(' onDate ')
+            if (nameMovie in output) {
+                output[nameMovie].date = date
             }
         }
-
     }
-
-
-    for(mov of movies){
-        if (mov.director!=="" && mov.date!==""){
-            console.log(JSON.stringify(Object(mov)))
+    let outputRdy = []
+    for (let [key, value] of Object.entries(output)){
+        if (Object.keys(output[key]).length !== 3){
+            delete output[key]
+        } else {
+            outputRdy.push(value)
+            console.log(JSON.stringify(value))
         }
     }
 }
 
-movieSolve([
+solve([
     'addMovie The Avengers',
     'addMovie Superman',
     'The Avengers directedBy Anthony Russo',

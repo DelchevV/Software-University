@@ -1,8 +1,8 @@
 function solveWords(wordsArr) {
     let seek={};
     
-    let searchedWords = wordsArr.shift()
-    searchedWords=searchedWords.split(" ")
+    let searchedWords = wordsArr.shift().split(" ")
+   
     for (word of searchedWords){
          seek[word]=0;
         for(w of wordsArr){

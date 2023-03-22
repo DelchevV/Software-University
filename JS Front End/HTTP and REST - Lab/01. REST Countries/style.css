@@ -1,0 +1,42 @@
+body{
+    background-color: blanchedalmond;
+
+}
+input{
+    width: 200px;
+    height: 30px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    margin: 200px auto;
+    text-align: center;
+}
+input::placeholder{
+    color: lightgreen;
+    text-align: center;
+}
+
+button{
+    all: unset;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; 
+}
+ul{
+    margin-left: -29px;
+}
+ul li{
+    list-style: none;
+    height: 50px;
+}
+li img{
+    height: 100px;
+    width: 100%;
+}

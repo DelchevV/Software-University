@@ -1,0 +1,15 @@
+{% block nav %}
+    <header>
+        <!-- Navigation Bar -->
+        <h1><a class="index-navigation" href="{% url 'home-page' %}">MyPlants</a></h1>
+        <nav>
+            <!-- if the user has not created a profile -->
+                <a href="{% url 'create-profile' %}">Create Profile</a>
+
+            <!-- if the user has created a profile -->
+                <a href="{% url "catalogue" %}">Catalogue</a>
+                <a href="{% url 'edit-plant' 1 %}">Create Plant</a>
+                <a href="{% url 'profile-delete' %}">Profile</a>
+        </nav>
+    </header>
+{% endblock %}

@@ -14,7 +14,9 @@ class Profile(models.Model):
     username = models.CharField(
         null=False,
         blank=False,
-        validators=[MaxLengthValidator(15), MinLengthValidator(2), check_valid_username]
+        validators=[MaxLengthValidator(15), MinLengthValidator(2), check_valid_username],
+        max_length=30
+
     )
     email = models.EmailField(
         null=False,
@@ -53,6 +55,7 @@ class Album(models.Model):
     artist = models.CharField(
         null=False,
         blank=False,
+        max_length=20
     )
     genre = models.CharField(
         null=False,

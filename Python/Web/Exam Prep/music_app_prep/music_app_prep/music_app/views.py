@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Profile, Album
-from .forms import ProfileModelForm, AlbumModelForm
+from .forms import ProfileModelForm, AlbumModelForm, EditAlbumModelForm, DeleteAlbumModelForm
 
 
 # Create your views here.
@@ -44,21 +44,68 @@ def add_album(request):
     return render(request, 'music_app/add-album.html', context)
 
 
-def edit_album(request):
-    return None
+def details_album(request, pk):
+    album = Album.objects.filter(pk=pk).get()
+    context = {
+        'album': album
+    }
+    return render(request, 'music_app/album-details.html', context)
 
 
-def delete_album(request):
-    return None
+def edit_album(request, pk):
+    album = Album.objects.filter(pk=pk).get()
+
+    form = EditAlbumModelForm(request.POST or None, instance=album)
+    if form.is_valid():
+        form.save()
+        return redirect('home-page')
+
+    context = {
+        'form': form,
+        'album': album
+    }
+    return render(request, 'music_app/edit-album.html', context)
+
+
+def delete_album(request, pk):
+    album = Album.objects.filter(pk=pk).get()
+
+    form = DeleteAlbumModelForm(request.POST or None, instance=album)
+    context = {
+        'form': form,
+        'album': album
+    }
+
+    if form.is_valid():
+        album.delete()
+        return redirect('home-page')
+
+    return render(request, 'music_app/delete-album.html', context)
 
 
 def profile_details(request):
-    return None
+    profile = Profile.objects.get()
+    albums = Album.objects.all()
+    context = {
+        'profile': profile,
+        'album': albums
+
+    }
+    return render(request, 'music_app/profile-details.html', context)
 
 
 def profile_delete(request):
-    return None
+    albums = Album.objects.all()
+    profile = Profile.objects.get()
+    context = {
+        'profile': profile,
+        'album': albums
 
+    }
 
-def details_album(request):
-    return None
+    if request.method == "GET":
+        profile.delete()
+        albums.delete()
+        return redirect('home-page')
+
+    return render(request, 'music_app/profile-delete.html', context)
